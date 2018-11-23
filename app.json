@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"red",
+    "backgroundColor": "#CCCCCC",
+    "navigationBarBackgroundColor": "#f90",
+    "navigationBarTitleText": "夏麒麟",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/tab/1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "pages/images/tab/2.png"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "red",
+    "backgroundColor": "yellow",
+    "borderStyle": "white",
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

@@ -1,14 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/item/item"
   ],
-  "window":{
-    "backgroundTextStyle":"red",
+  "window": {
+    "backgroundTextStyle": "red",
     "backgroundColor": "#CCCCCC",
     "navigationBarBackgroundColor": "#f90",
     "navigationBarTitleText": "夏麒麟",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
@@ -20,6 +21,11 @@
       {
         "pagePath": "pages/logs/logs",
         "text": "日志",
+        "iconPath": "pages/images/tab/2.png"
+      },
+      {
+        "pagePath": "pages/item/item",
+        "text": "测试",
         "iconPath": "pages/images/tab/2.png"
       }
     ],

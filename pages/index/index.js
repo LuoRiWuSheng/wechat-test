@@ -9,7 +9,22 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    test: "测试双向数据绑定"
+    test: "测试双向数据绑定",
+    arryList: [123123,3312,12131,1212],
+    name: "狗子",
+    staffA: {
+      firstName: "赵",
+      lastName: "三" 
+    },
+    staffB: {
+      firstName: "离",
+      lastName: "万"
+    },
+    staffC: {
+      firstName: "钟",
+      lastName: "德"
+    },
+    count: 0
   },
   //事件处理函数
   bindViewTap: function() {
@@ -58,5 +73,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  add() {
+    // 这里的this就是app实例对象，但是，我们去改变data中的数据，是不能直接 this.count++ 改的，它不会响应到视图层
+    this.setData({
+      count: this.data.count+2
+    })
+   
   }
 })

@@ -1,0 +1,7 @@
+测试
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display:block">{{item.id}}</switch>
+<button bindtap="switch">切换</button>
+<button bindtap="addToFront">添加新项</button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style='display: block'>{{item.id}}</switch>
+<button bindtap="addNumberToFront"> 点击我</button>

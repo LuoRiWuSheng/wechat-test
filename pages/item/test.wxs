@@ -1,0 +1,10 @@
+// 模块内的作用域是私有的，对外不可见，只能通过module.exports.变量名  对外暴露接口
+// 如果你的代码在以.wxs的文件中，就不用写<wxs></wxs>标签  直接写逻辑
+// wxs是脚本文件
+
+// 其他文件想要使用，直接  <wxs src="相对路径/test.wxs" module="obj"></wxs>
+
+// 你导出的是一个Object 所以，你需要 obj.a 在页面上使用  {{obj.a}}
+
+var a = "1";
+module.exports.a = a;

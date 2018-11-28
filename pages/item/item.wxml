@@ -5,3 +5,21 @@
 
 <switch wx:for="{{numberArray}}" wx:key="*this" style='display: block'>{{item.id}}</switch>
 <button bindtap="addNumberToFront"> 点击我</button>
+<block>
+  尽量不要把样式写在行间，会影响渲染速度
+  <view style="color: red">内联样式</view>
+  <view style="color: {{val}}">变量表示样式</view>
+</block>
+属性，下面是写了一个hidden，并且值为true  直接隐藏，hidden在页面上还是会渲染的，只是不显示
+<view class="block color" hidden="true">使用class写样式</view>
+
+下面是WXSd的示例，这个是用于结合WXML构建页面的
+<wxs module="ml">
+  var msg = "你好啊,wxs"
+
+  module.exports.message = msg;
+</wxs>
+<view>{{ml.message}}</view>
+
+<wxs src="./test.wxs" module="obj"></wxs>
+{{obj.a}}

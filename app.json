@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/item/item"
+    "pages/item/item",
+    
+    "pages/query/query"
   ],
   "window": {
     "backgroundTextStyle": "red",
@@ -26,6 +28,11 @@
       {
         "pagePath": "pages/item/item",
         "text": "测试",
+        "iconPath": "pages/images/tab/2.png"
+      },
+      {
+        "pagePath": "pages/query/query",
+        "text": "获取节点",
         "iconPath": "pages/images/tab/2.png"
       }
     ],

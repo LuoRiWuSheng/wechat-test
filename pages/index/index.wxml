@@ -8,28 +8,30 @@
       <text>{{test}}</text>
     </block>
   </view>
+  <view wx:for="{{nums}}" wx:key="index">{{item}}</view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
   <view class='btn'>
     <button>显示</button>
     <button>隐藏</button>
+    <button>分享</button>
   </view>
-  <view>{{test}}</view>
-  <view wx:for="{{arryList}}" wx:key="index">{{item}}</view>
-  条件渲染
-  <view wx:if="{{name === '张三'}}">{{name}}</view>
-  <view wx:elif="{{name === '李四'}}">{{name}}</view>
-  <view wx:else="{{name}}">{{name}}</view>
-  模版
-  <template name="staffName">
+  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i" wx:key="index">
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j"  wx:key="index2">
+      <span wx:if="{{i<j}}">{{i}}*{{j}}={{i*j}}</span>
+    </view>
+  </view>
+
+</view>
+<template name="staffName">
     <view>姓: {{firstName}}--名:{{lastName}}</view>
   </template>
 
   <template is="staffName" data="{{...staffA}}"> </template>
   <template is="staffName" data="{{...staffB}}"> </template>
    <template is="staffName" data="{{...staffC}}"> </template>
-</view>
+
 
 绑定事件
 <view bindtap="add">{{count}}</view>

@@ -9,8 +9,11 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+
     test: "测试双向数据绑定",
-    arryList: [123123,3312,12131,1212],
+
+    nums: [1,2,3,4,5,6,7,8],
+
     name: "狗子",
     staffA: {
       firstName: "赵",
@@ -62,8 +65,16 @@ Page({
     }
   },
   onShareAppMessage(obj) {
+    if(obj.from === "button") { // 来自页面按钮的分享
+        console.log(obj.target);  
+    }
     // 转发
     console.log(obj) // {from: "menu", target: undefined}
+    // 分享需要返回一个对象
+    return {
+      title: "分享的标题",
+      path: "/pages/logs/log?id=123"
+    }
   },
   getUserInfo: function(e) {
     console.log(e)

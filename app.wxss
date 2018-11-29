@@ -1,4 +1,8 @@
-/**app.wxss**/
+/**app.wxss
+  小程序的样式布局，采用底层运算，帮助开发者自动适配不同的屏幕
+
+    这里定义的是全局的样式
+**/
 .container {
   height: 100%;
   display: flex;

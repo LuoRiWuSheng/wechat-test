@@ -1,1 +1,8 @@
 /* pages/item/item.wxss */
+.block {
+  width: 300px;
+  height: 100px;
+}
+.color {
+  background: pink;
+}

@@ -1,3 +1,6 @@
+/**
+  小程序的样式单位全部都是rpx
+*/
 .log-list {
   display: flex;
   flex-direction: column;

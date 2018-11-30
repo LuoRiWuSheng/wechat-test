@@ -91,5 +91,8 @@ Page({
       count: this.data.count+2
     })
    
+  },
+  print() {
+    console.log("我是index中定义的方法")
   }
 })

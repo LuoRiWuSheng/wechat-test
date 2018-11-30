@@ -35,3 +35,6 @@
 
 绑定事件
 <view bindtap="add">{{count}}</view>
+
+使用自定义组件，传递数据，直接使用字符串就可以
+<say-name say="组件" print="print()"/>

@@ -1,0 +1,2 @@
+<!--pages/components/say.wxml-->
+<text>学说一句话 {{say}}</text>

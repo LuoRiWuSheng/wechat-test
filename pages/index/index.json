@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "say-name": "/pages/components/say" 
+  }
+}

@@ -1,2 +1,10 @@
 
 <text id="content">pages/query/query.wxml</text>
+<swiper indicator-dots="true" indicator-color="#F90" indicator-active-color="#FFF" circular="true" bindchange="change">
+<!--滑块组件 -->
+  <block wx:for="{{imgs}}"  wx:key="index">
+    <swiper-item item-id="1">
+      <image src="{{item}}" class="slide-image"></image>
+    </swiper-item>
+  </block>
+</swiper>

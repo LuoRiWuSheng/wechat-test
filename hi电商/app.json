@@ -1,0 +1,18 @@
+{
+    "pages": [
+        "pages/list/list",
+        "pages/detail/detail",
+        "pages/home/home",
+        "pages/classify/classify",
+        "pages/cart/cart",
+        "pages/personal/personal",
+        "pages/index/index"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "hi,电商",
+        "navigationBarTextStyle": "black"
+    }
+}
